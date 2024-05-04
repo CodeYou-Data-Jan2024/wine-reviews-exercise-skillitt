@@ -1,5 +1,9 @@
 # add your code here.
 
 import pandas as pd
-reviews = pd.read_csv("/Users/markdevore/github-classroom/CodeYou-Data-Jan2024/wine-reviews-exercise-skillitt/data", index_col=0)
-pd.DataFrame(['Country', 'Count', 'Points'])
+
+file_path = '/Users/markdevore/github-classroom/CodeYou-Data-Jan2024/wine-reviews-exercise-skillitt/data'
+
+df = pd.read_csv(file_path)
+
+df.head()
