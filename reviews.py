@@ -2,8 +2,11 @@
 
 import pandas as pd
 
-file_path = '/Users/markdevore/github-classroom/CodeYou-Data-Jan2024/wine-reviews-exercise-skillitt/data'
+# Path to the CSV file
+csv_file_path = "data/winemag-data-130k-v2.csv"
 
-df = pd.read_csv(file_path)
+# Read the CSV file into a DataFrame
+df = pd.read_csv(csv_file_path)
 
-df.head()
+# Display the first few rows of the DataFrame
+print(df.head())
