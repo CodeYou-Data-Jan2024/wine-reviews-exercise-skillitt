@@ -23,4 +23,9 @@ output_csv_path = "data/reviews-per-country.csv"
 # Write the summary data to a new CSV file
 summary_df.to_csv(output_csv_path, index=False)
 
+# Round up the average points
+
+summary_df['average_points'] = summary_df['average_points'].round(1)
+
+
 print("Summary data saved to reviews-per-country.csv")
