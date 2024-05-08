@@ -12,7 +12,7 @@ df = pd.read_csv(input_csv_path)
 summary_df = df.groupby('country').agg({'country': 'count', 'points': 'mean'})
 
 # Rename columns 
-summary_df.rename(columns={'country': 'number_of_reviews', 'points': 'average_points'}, inplace=True)
+summary_df.rename(columns={'country': 'number_of_reviews' , 'points': 'average_points'}, inplace=True)
 
 # Reset index 
 summary_df.reset_index(inplace=True)
