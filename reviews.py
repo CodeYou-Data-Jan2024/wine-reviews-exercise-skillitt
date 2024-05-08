@@ -19,7 +19,7 @@ summary_df.reset_index(inplace=True)
 
 # Round up the output CSV
 summary_df['number_of_reviews'] = summary_df['number_of_reviews'].apply(lambda x: int(x) if x % 1 == 0 else int(x) + 1)
-summary_df['average_points'] = summary_df['average_points'].apply(lambda x: round(x))
+summary_df['average_points'] = summary_df['average_points'].apply(lambda x: round(x, 1))
 
 # output CSV file
 output_csv_path = "data/reviews-per-country.csv"
